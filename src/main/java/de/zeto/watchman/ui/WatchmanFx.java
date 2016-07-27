@@ -20,11 +20,6 @@ public class WatchmanFx extends Application {
         
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/Styles.css");
-        
-        Watchman watchman = new Watchman();
-
-        ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor();
-        Future<String> threadHandle = singleThreadExecutor.submit(watchman);
 
         stage.setTitle("WatchmanFx");
         stage.setScene(scene);
